@@ -1,0 +1,110 @@
+---
+title: JetBack Changelog
+description: Review the version history of JetBack, including recent updates, new features, and fixes.
+---
+
+## Changelog Overview
+
+JetBack releases updates regularly to enhance flight monitoring, refund claiming, and user experience. Check this page for the latest version history, new features, improvements, and bug fixes. You receive notifications for major updates through the app.
+
+<Callout kind="info">
+  Enable automatic updates in your app settings to get the latest features and security improvements immediately.
+</Callout>
+
+## Recent Updates
+
+<Update label="2024-10-15" description="v2.1.0" tags={["feature", "improvement"]}>
+## New Features
+
+- Added support for 15 additional airlines, including budget carriers like Spirit and Frontier
+- Introduced real-time price drop alerts with estimated credit amounts before claiming
+
+## Improvements
+
+- Enhanced fare detection accuracy by 25% using improved airline API integrations
+- Optimized battery usage during background monitoring on iOS and Android
+
+## Bug Fixes
+
+- Fixed occasional delays in claim submission notifications
+- Resolved issue where duplicate bookings caused multiple claims
+</Update>
+
+<Update label="2024-09-25" description="v2.0.0" tags={["feature", "breaking"]}>
+## New Features
+
+- Launch of Instant Credit Wallet: View and redeem credits directly in the app
+- Multi-flight batch claiming: Monitor and claim for up to 10 trips at once
+
+## Breaking Changes
+
+- Updated booking confirmation format requirements for better parsing—re-forward bookings if needed
+
+## Improvements
+
+- Redesigned notifications with actionable buttons for quick claim reviews
+- Faster app startup by caching recent flight data locally
+
+## Bug Fixes
+
+- Corrected credit calculation errors for international flights
+- Fixed crash on Android when processing large email attachments
+</Update>
+
+<Update label="2024-08-10" description="v1.5.0" tags={["bugfix", "improvement"]}>
+## New Features
+
+- Email forwarding simplified: Drag-and-drop support for confirmation emails
+- Basic analytics dashboard showing total savings and claim success rate
+
+## Improvements
+
+- Reduced false positive price drops by cross-referencing multiple data sources
+- Added dark mode support for better low-light usage
+
+## Bug Fixes
+
+- Patched security vulnerability in webhook handling for enterprise users
+- Fixed sync issues between app and web dashboard
+</Update>
+
+## Version Summary
+
+| Version | Release Date | Key Tags          | Highlights                          |
+|---------|--------------|-------------------|-------------------------------------|
+| v2.1.0  | 2024-10-15  | feature, improvement | New airlines, better alerts        |
+| v2.0.0  | 2024-09-25  | feature, breaking | Credit wallet, batch claiming      |
+| v1.5.0  | 2024-08-10  | bugfix, improvement | Email forwarding, analytics       |
+
+## How to Update
+
+<Steps>
+  <Step title="Check for Updates" icon="download">
+    Open the JetBack app and navigate to Settings > About.
+  </Step>
+  <Step title="Enable Auto-Updates" icon="settings">
+    Toggle on automatic updates to receive new versions seamlessly.
+  </Step>
+  <Step title="Review Changes" icon="book-open">
+    After updating, check the in-app changelog for migration notes if applicable.
+  </Step>
+</Steps>
+
+## Next Steps
+
+<Columns cols={3}>
+  <Card title="Quick Start" icon="rocket" href="/quickstart">
+    Set up monitoring for your first flight in under 2 minutes.
+  </Card>
+  <Card title="Troubleshooting" icon="help-circle" href="/help-center">
+    Common issues and solutions.
+  </Card>
+  <Card title="Contact Support" icon="message-circle" href="/support">
+    Reach out if you encounter problems.
+  </Card>
+</Columns>
+
+<Expandable title="Known Issues" default-open="false">
+  - Rare delays in credit processing during peak holiday seasons (expected resolution in v2.2.0)
+  - Web dashboard sync limited to last 30 days of activity
+</Expandable>
